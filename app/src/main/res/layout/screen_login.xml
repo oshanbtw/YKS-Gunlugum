@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_welcome"
+    tools:context=".LoginScreen">
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/gradient_welcome_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/img_loginExit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_loginScreen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/register_image" />
+
+        <EditText
+            android:id="@+id/et_loginMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email Adresiniz"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_loginSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Şifreniz"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/tv_loginSifremiUnuttum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sifremi_unuttum"
+                android:textColor="@color/blue"
+                android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/btn_loginGirisYap"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="GİRİŞ YAP"
+            android:background="@drawable/gradient_welcome_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

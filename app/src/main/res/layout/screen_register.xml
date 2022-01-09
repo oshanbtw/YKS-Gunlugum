@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_welcome"
+    tools:context=".RegisterScreen">
+
+    <LinearLayout
+        android:id="@+id/layout_register"
+        android:layout_width="0dp"
+        android:layout_height="560dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/gradient_welcome_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/img_registerExit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_registerScreen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/register_image" />
+
+        <EditText
+            android:id="@+id/et_registerIsim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Adınız"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/et_registerSoyisim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Soyadınız"
+            android:textAlignment="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <EditText
+            android:id="@+id/et_registerMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email Adresiniz"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_registerSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Şifreniz"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/et_registerSifreTekrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Tekrar Şifreniz"
+            android:textAlignment="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/btn_registerKayitOl"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="KAYIT OL"
+            android:background="@drawable/gradient_welcome_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

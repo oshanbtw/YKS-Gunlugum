@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_countdown"
+        android:icon="@drawable/ic_watch"
+        android:title="Ana Sayfa"/>
+
+    <item
+        android:id="@+id/nav_topics"
+        android:icon="@drawable/ic_pin"
+        android:title="Konular"/>
+
+    <item
+        android:id="@+id/nav_plan"
+        android:icon="@drawable/ic_book_mark"
+        android:title="Plan"/>
+
+    <item
+        android:id="@+id/nav_recommend"
+        android:icon="@drawable/ic_book"
+        android:title="Öneri"/>
+</menu>

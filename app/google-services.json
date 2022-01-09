@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "331976083300",
+    "project_id": "yks-gunlugum",
+    "storage_bucket": "yks-gunlugum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331976083300:android:8d58e891c768b1f1f15c71",
+        "android_client_info": {
+          "package_name": "com.hansheaven.yks_gunlugum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331976083300-pu01cl55gva6qt4so2ovuqcbarubtokr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-3Ol21TkVf-soKnBQO36a8g9UsnIILaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331976083300-pu01cl55gva6qt4so2ovuqcbarubtokr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

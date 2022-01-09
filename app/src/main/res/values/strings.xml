@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">YKS-Gunlugum</string>
+    <string name="welcome_image">Welcome Image</string>
+    <string name="hos_geldiniz">Hoşgeldiniz,</string>
+    <string name="ysk_gunlugume_hosgeldiniz">YKS Günlüğüm\'e hoşgeldiniz...</string>
+    <string name="zaten_bir_hesabiniz_var_mi">Zaten Bir Hesabınız Var Mı?</string>
+    <string name="giris_yap">GİRİŞ YAP</string>
+    <string name="hesabiniz_yoksa">Hesabınız Yoksa Hemen Hesap Oluşturmak İçin;</string>
+    <string name="kayit_ol">KAYIT OL</string>
+    <string name="register_image">Register Image</string>
+    <string name="sifremi_unuttum"><u>Şifremi Unuttum</u>.</string>
+</resources>

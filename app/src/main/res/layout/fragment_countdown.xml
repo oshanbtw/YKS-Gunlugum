@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_welcome_white_noradius">
+
+    <ImageView
+        android:id="@+id/countdown_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient_countdown_text"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TYT KALAN SÜRE"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/geriSayimTYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="G"
+        app:suffixGravity="bottom"
+        app:suffixHour="S"
+        app:suffixMinute="D"
+        app:suffixSecond="S"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeBgColor="@color/blue"
+        app:timeBgRadius="10dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradient_countdown_text"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AYT KALAN SÜRE"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/geriSayimAYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="G"
+        app:suffixGravity="bottom"
+        app:suffixHour="S"
+        app:suffixMinute="D"
+        app:suffixSecond="S"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeBgColor="@color/blue"
+        app:timeBgRadius="10dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradient_countdown_text"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="YDS KALAN SÜRE"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/geriSayimYDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="G"
+        app:suffixGravity="bottom"
+        app:suffixHour="S"
+        app:suffixMinute="D"
+        app:suffixSecond="S"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeBgColor="@color/blue"
+        app:timeBgRadius="10dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp" />
+
+</LinearLayout>
