@@ -35,7 +35,7 @@ public class RegisterScreen extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference mReference;
     FirebaseUser mUser;
-    HashMap <String, Object> mData;
+    HashMap <String, Object> mData, mDataTYT, mDataAYT, mDataYDT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,12 +125,135 @@ public class RegisterScreen extends AppCompatActivity {
                                            mUser = mAuth.getCurrentUser(); //Mevcut Kullanıcı
 
                                            mData = new HashMap<>();
+                                           mDataTYT = new HashMap<>();
+                                           mDataAYT = new HashMap<>();
+                                           mDataYDT = new HashMap<>();
 
                                            mData.put("İsim", txt_registerIsim);
                                            mData.put("Soyisim", txt_registerSoyisim);
                                            mData.put("Email", txt_registerEmail);
                                            mData.put("Şifre", txt_registerSifre);
                                            mData.put("KullaniciID", mUser.getUid());
+                                           //10.01.2022 Konuları Ekleme
+                                           //Matematik Konularını Datebase'e false olarak ekliyoruz. (23 tane tyt mat konusu varmış)
+
+                                           int temp=1;
+                                           for(int i = 0; i<23; i++){
+                                               mDataTYT.put("TYT-Mat-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<19; i++){
+                                               mDataTYT.put("TYT-TUR-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<24; i++){
+                                               mDataTYT.put("TYT-GEO-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<10; i++){
+                                               mDataTYT.put("TYT-FIZ-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<11; i++){
+                                               mDataTYT.put("TYT-KIM-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<10; i++){
+                                               mDataTYT.put("TYT-BIY-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<17; i++){
+                                               mDataTYT.put("TYT-TAR-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<21; i++){
+                                               mDataTYT.put("TYT-COG-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<8; i++){
+                                               mDataTYT.put("TYT-FEL-"+temp, false);
+                                               temp++;
+                                           }
+                                           temp=1;
+                                           for(int i = 0; i<7; i++){
+                                               mDataTYT.put("TYT-DIN-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           //AYT Konuları
+                                           temp=1;
+                                           for(int i = 0; i<15; i++){
+                                               mDataAYT.put("AYT-EDE-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<27; i++){
+                                               mDataAYT.put("AYT-GEO-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<31; i++){
+                                               mDataAYT.put("AYT-MAT-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<29; i++){
+                                               mDataAYT.put("AYT-TAR-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<9; i++){
+                                               mDataAYT.put("AYT-COG-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<8; i++){
+                                               mDataAYT.put("AYT-FEL-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<11; i++){
+                                               mDataAYT.put("AYT-DIN-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<20; i++){
+                                               mDataAYT.put("AYT-FIZ-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<21; i++){
+                                               mDataAYT.put("AYT-KIM-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<15; i++){
+                                               mDataAYT.put("AYT-BIY-"+temp, false);
+                                               temp++;
+                                           }
+
+                                           temp=1;
+                                           for(int i = 0; i<10; i++){
+                                               mDataYDT.put("YDT-"+temp, false);
+                                               temp++;
+                                           }
 
                                            //Firebase'de yer açıp yerleştiriyor.
                                            mReference.child("Kullanıcılar").child(mUser.getUid()).setValue(mData)
@@ -148,6 +271,11 @@ public class RegisterScreen extends AppCompatActivity {
                                                            }
                                                        }
                                                    });
+                                           mReference.child("Kullanıcılar").child(mUser.getUid()).child("1TYTKonulari").setValue(mDataTYT);
+                                           mReference.child("Kullanıcılar").child(mUser.getUid()).child("2AYTKonulari").setValue(mDataAYT);
+                                           mReference.child("Kullanıcılar").child(mUser.getUid()).child("3YDTKonulari").setValue(mDataYDT);
+
+
                                        }
                                        else{
                                            makeToast(task.getException().getMessage());

@@ -1,5 +1,6 @@
 package com.hansheaven.yks_gunlugum;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,9 @@ public class TopicsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //return inflater.inflate(R.layout.fragment_topics, container, false);
         View rootView = inflater.inflate(R.layout.fragment_topics, container, false);
+
+        Intent go = new Intent(getActivity(), TYTKonulariScreen.class);
+        startActivity(go);
 
         return rootView;
     }

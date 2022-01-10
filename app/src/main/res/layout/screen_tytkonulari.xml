@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TYTKonulariScreen"
+    android:background="@drawable/gradient_welcome">
+
+    <LinearLayout
+        android:id="@+id/layout_tyt_konulari"
+        android:layout_width="0dp"
+        android:layout_height="560dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/gradient_welcome_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!--Ders Butonu-->
+                <Button
+                    android:id="@+id/btn_tytkonulari_matematik"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_welcome_button"
+                    android:text="MATEMATİK"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"/>
+
+                <!--Ders'e Ait Kolon-->
+                <LinearLayout
+                    android:id="@+id/layout_kolon_tyt_mat"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat1"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sayılar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat2"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sayı Basamakları"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat3"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Bölme ve Bölünebilme"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat4"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="OBEB-OKEK"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat5"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Rasyonel Sayılar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat6"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Basit Eşitsizlikler"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytma7"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Mutlak Değer"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat8"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Üslü Sayılar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat9"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Köklü Sayılar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat10"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Çarpanlara Ayırma"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat11"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Oran Orantı"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat12"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Denklem Çözme"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat13"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Problemler"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat14"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Kümeler-Kartezyen Çarpım"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat15"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Fonskiyonlar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat16"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Permütasyon"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat17"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Kombinasyon"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat18"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Binom"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat19"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Olasılık"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat20"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="İstatistik"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat21"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="2.Dereceden Denklemler"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat22"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Karmaşık Sayılar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tytmat23"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Polinomlar"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <!--Ders Butonu-->
+                <Button
+                    android:id="@+id/btn_tytkonulari_turkce"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_welcome_button"
+                    android:text="TÜRKÇE"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"/>
+
+                <!--Ders'e Ait Kolon-->
+                <LinearLayout
+                    android:id="@+id/layout_kolon_tyt_turkce"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur1"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sözcük Anlamı"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur2"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Söz Yorumu"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur3"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Deyim ve Atasözü"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur4"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Cümle Anlamı"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur5"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Cümle Yorumu"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur6"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Paragrafta Anlatım Teknikleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur7"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Paragrafta Konu-Ana Düşünce"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur8"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Paragrafta Yapı"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur9"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Paragrafta Yardımcı Düşünce"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur10"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Ses Bilgisi"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur11"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Yazım Kuralları"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur12"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Noktalama İşaretleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur13"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sözcüğün Yapısı"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur14"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sözcük Türleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur15"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Fiiller"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur16"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Sözcük Grupları"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur17"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Cümlenin Ögeleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur18"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Cümle Türleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+                    <!--Ders İçeriği-->
+                    <LinearLayout
+                        android:id="@+id/layout_tyttur19"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradient_topics_list"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Cümle Türleri"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YKSGunlugum">
         <activity
+            android:name=".TYTKonulariScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainScreen"
             android:exported="true" />
         <activity
