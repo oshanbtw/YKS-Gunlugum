@@ -23,7 +23,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            tools:src="@tools:sample/avatars"
+            android:src="@drawable/books"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"/>
         
@@ -37,22 +37,22 @@
             android:background="@drawable/gradient_topics_text">
 
             <ImageView
-                android:id="@+id/iv_topics_tyt"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                tools:src="@tools:sample/avatars"
+                android:src="@drawable/light"
                 android:layout_gravity="center"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="25dp"
+                android:clickable="false"/>
 
             <TextView
-                android:id="@+id/tv_topics_tyt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TYT KONULARI"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:textSize="25dp"
-                android:layout_marginStart="10dp" />
+                android:layout_marginStart="10dp"
+                android:clickable="false"/>
             
         </LinearLayout>
 
@@ -69,7 +69,7 @@
                 android:id="@+id/iv_topics_ayt"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                tools:src="@tools:sample/avatars"
+                android:src="@drawable/ayt"
                 android:layout_gravity="center"
                 android:layout_marginStart="25dp"/>
 
@@ -98,7 +98,7 @@
                 android:id="@+id/iv_topics_ydt"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                tools:src="@tools:sample/avatars"
+                android:src="@drawable/ydt"
                 android:layout_gravity="center"
                 android:layout_marginStart="25dp"/>
 

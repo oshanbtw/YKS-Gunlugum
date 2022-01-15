@@ -26,7 +26,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            tools:srcCompat="@tools:sample/avatars"
+            android:src="@drawable/redback"
             android:background="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true" />
@@ -37,7 +37,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            tools:src="@tools:sample/avatars"
+            android:src="@drawable/login"
             android:contentDescription="@string/register_image" />
 
         <EditText
