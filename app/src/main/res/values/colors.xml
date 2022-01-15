@@ -10,4 +10,7 @@
     <color name="blue">#3F51B5</color>
     <color name="red">#F44336</color>
     <color name="green">#52F436</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000C5D</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>
