@@ -4,6 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_welcome"
     tools:context=".AYTKonulariScreen">
+
+    <LinearLayout
+        android:id="@+id/layout_ayt_konulari"
+        android:layout_width="0dp"
+        android:layout_height="560dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/gradient_welcome_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_aytkonulari_geri"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/redback"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_matematik"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="MATEMATİK"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_edebiyat"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="EDEBİYAT"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_geometri"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="GEOMETRİ"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_fizik"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="FİZİK"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_kimya"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="KİMYA"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_biyoloji"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="BİYOLOJİ"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_cografya"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="coğrafya"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_tarih"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="TARİH"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_felsefe"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="FELSEFE"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <!--Ders Butonu-->
+            <Button
+                android:id="@+id/btn_aytkonulari_din"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_welcome_button"
+                android:text="DİN"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
