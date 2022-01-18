@@ -25,19 +25,20 @@ import com.google.firebase.database.ValueEventListener;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ListViewItemAdaptor extends RecyclerView.Adapter<ListViewItemAdaptor.MainViewHolder> {
 
 
 
     Context context ;
-    List<String> dersList;
+    Map<String, Boolean> dersList;
 
     FirebaseAuth mAuth;
     DatabaseReference mReference;
     FirebaseUser mUser;
 
-    public ListViewItemAdaptor(Context context, List<String > dersList) {
+    public ListViewItemAdaptor(Context context, Map<String, Boolean> dersList) {
         this.context = context;
         this.dersList = dersList;
 
@@ -56,26 +57,17 @@ public class ListViewItemAdaptor extends RecyclerView.Adapter<ListViewItemAdapto
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
 
-        holder.dersKonulari.setText(dersList.get(position).toString());
-
-        mReference = FirebaseDatabase.getInstance().getReference("Kullanıcılar").child(mUser.getUid()).child("1TYTKonulari");
-        mReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+        holder.dersKonulari.setText(dersList.keySet().toArray()[position].toString());
+        if((Boolean) dersList.values().toArray()[position]){
+            holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list_green);
+        }
+        else{
+            holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list);
+        }
 
         holder.konularLayout.setOnClickListener(v -> {
             holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list_green);
         });
-
-
     }
 
     @Override
@@ -88,13 +80,10 @@ public class ListViewItemAdaptor extends RecyclerView.Adapter<ListViewItemAdapto
         TextView dersKonulari;
         ConstraintLayout konularLayout;
 
-
         public MainViewHolder(@NonNull View itemView) {
             super(itemView);
             dersKonulari = itemView.findViewById(R.id.dersKonulari);
             konularLayout = itemView.findViewById(R.id.konularLayout);
         }
     }
-
-
 }

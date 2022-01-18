@@ -9,6 +9,9 @@ import android.widget.ImageView;
 
 public class AYTKonulariScreen extends AppCompatActivity {
 
+    //Ders KOnuları
+
+
     ImageView iv_aytback;
 
     @Override

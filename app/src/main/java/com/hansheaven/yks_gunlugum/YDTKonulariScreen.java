@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 public class YDTKonulariScreen extends AppCompatActivity {
 
+
     ImageView iv_ydback;
 
     @Override
