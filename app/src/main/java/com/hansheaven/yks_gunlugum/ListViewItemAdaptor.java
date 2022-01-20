@@ -27,20 +27,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+
+
 public class ListViewItemAdaptor extends RecyclerView.Adapter<ListViewItemAdaptor.MainViewHolder> {
 
 
 
     Context context ;
     Map<String, Boolean> dersList;
+    String sinavAdi;
+    String dersAdi;
 
     FirebaseAuth mAuth;
     DatabaseReference mReference;
     FirebaseUser mUser;
 
-    public ListViewItemAdaptor(Context context, Map<String, Boolean> dersList) {
+    public ListViewItemAdaptor(Context context, Map<String, Boolean> dersList, String sinavAdi, String dersAdi) {
         this.context = context;
         this.dersList = dersList;
+        this.sinavAdi = sinavAdi;
+        this.dersAdi = dersAdi;
 
         this.mAuth = FirebaseAuth.getInstance();
         this.mReference = FirebaseDatabase.getInstance().getReference();
@@ -66,7 +72,18 @@ public class ListViewItemAdaptor extends RecyclerView.Adapter<ListViewItemAdapto
         }
 
         holder.konularLayout.setOnClickListener(v -> {
-            holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list_green);
+            String konuAdi = holder.dersKonulari.getText().toString();
+
+            if((Boolean) this.dersList.values().toArray()[holder.getLayoutPosition()]){
+                this.dersList.put(konuAdi, false);
+                holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list);
+                mReference.child("Kullanıcılar").child(mUser.getUid()).child(sinavAdi).child(dersAdi).child(konuAdi).setValue(false);
+            }
+            else{
+                this.dersList.put(konuAdi, true);
+                holder.konularLayout.setBackgroundResource(R.drawable.gradient_topics_list_green);
+                mReference.child("Kullanıcılar").child(mUser.getUid()).child(sinavAdi).child(dersAdi).child(konuAdi).setValue(true);
+            }
         });
     }
 

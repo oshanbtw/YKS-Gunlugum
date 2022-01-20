@@ -106,9 +106,6 @@ public class RegisterScreen extends AppCompatActivity {
         init();
         acilincaOlacaklar();
         clickOlaylari();
-
-
-
     }
 
     public void init() {
@@ -217,7 +214,7 @@ public class RegisterScreen extends AppCompatActivity {
                                     }
                                 }
                                 for (String s : YDTIngilizce) {
-                                    mReference.child("Kullanıcılar").child(mUser.getUid()).child("YDTKonulari").child(s).setValue(false);
+                                    mReference.child("Kullanıcılar").child(mUser.getUid()).child("YDTKonulari").child("Ingilizce").child(s).setValue(false);
                                 }
 
                                 //Firebase'de yer açıp yerleştiriyor.

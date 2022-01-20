@@ -4,7 +4,8 @@
     android:layout_height="45dp"
     android:id="@+id/konularLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/gradient_topics_list">
+    android:background="@drawable/gradient_topics_list"
+    android:layout_marginTop="2dp">
 
     <TextView
         android:id="@+id/dersKonulari"
@@ -15,6 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textColor="@color/white"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textAlignment="center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
