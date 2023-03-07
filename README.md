@@ -1,6 +1,6 @@
 # YKS Günlüğüm
 ## YKS Günlüğüm Nedir?
-> Bitirme projem olan bu uygulama, YKS’ye girecek bireylerin, sınav konularını takip edebilmesini kolaylaştırmak amacıyla hazırlanmıştır. Gireceği oturuma göre sınav konularını listeleyebilme, biirdiği konuları işaretleyebilme veya işaretini kaldırabilme gibi özelliklerin yanısıra, uygulama üzerinde not tutabileceklerdir. Ayrıca bütün oturumlara kalan süreyi canlı olarak takip edebilecektir. Bu sayede kullanıcı, gireceği sınavın konu takibini, not tutabilmeyi ve zaman takibini tek bir uygulamada yapabilir.
+> Bitirme projem olan bu uygulama, YKS’ye girecek bireylerin, sınav konularını takip edebilmesini kolaylaştırmak amacıyla hazırlanmıştır. Gireceği oturuma göre sınav konularını listeleyebilme, bitirdiği konuları işaretleyebilme veya işaretini kaldırabilme gibi özelliklerin yanısıra, uygulama üzerinde not tutabileceklerdir. Ayrıca bütün oturumlara kalan süreyi canlı olarak takip edebilecektir. Bu sayede kullanıcı, gireceği sınavın konu takibini, not tutabilmeyi ve zaman takibini tek bir uygulamada yapabilir.
 ## YKS Günlüğüm İçerik
 >* Açılış ekranında bizi giriş yapma ve kayıt olma ekranı karşılıyor. Daha önceden hesabımız varsa uygulamaya girebilir, eğer hesabımız yoksa uygulamaya kayıt olabiliriz. Kayıt olduktan sonra doğrulama yapmadan uygulamayı kullanmaya başlayabiliriz.
 
